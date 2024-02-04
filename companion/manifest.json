@@ -1,0 +1,26 @@
+{
+	"id": "resi-web",
+	"name": "Resi Web API",
+	"shortname": "resi",
+	"description": "Module to interact with the (internal) Resi Web API",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/AustinLMayes/companion-module-resi-web.git",
+	"bugs": "https://github.com/AustinLMayes/companion-module-resi-web/issues",
+	"maintainers": [
+		{
+			"name": "Austin Mayes",
+			"email": "me@austinlm.me"
+		}
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../dist//main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Resi",
+	"products": ["Web"],
+	"keywords": ["Streaming", "Video"]
+}

@@ -1,0 +1,4 @@
+node_modules/
+floattest.js
+dist/
+.husky/
