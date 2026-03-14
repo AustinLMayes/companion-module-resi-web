@@ -82,7 +82,7 @@ export class ResiApi {
         }
 
         console.log('Getting encoder status');
-        const response = await got.get(`${this.baseUrl}/customers/${this.customerId}/monitors`, {
+        const response = await got.get(`${this.baseUrl}/customers/${this.customerId}/encoders/status?wide=true`, {
             headers: {
                 Authorization: `X-Bearer ${this.token}`
             }
@@ -91,8 +91,8 @@ export class ResiApi {
         const body = JSON.parse(response.body);
 
         this.encoderStatus = {};
-        for (const encoder of body.encoderStatus) {
-            this.encoderStatus[encoder.encoderId] = encoder;
+        for (const encoder of body) {
+            this.encoderStatus[encoder.uuid] = encoder;
         }
 
         return this.encoderStatus;
