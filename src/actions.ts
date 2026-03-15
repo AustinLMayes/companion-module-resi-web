@@ -1,6 +1,6 @@
 // Companion actions:
-import type { CompanionActionDefinition, CompanionActionDefinitions, CompanionActionEvent, DropdownChoice, CompanionInputFieldDropdown, CompanionVariableDefinition, CompanionVariableValues } from "@companion-module/base";
-import type {ModuleInstance} from './main'
+import type { CompanionActionDefinition, CompanionActionDefinitions, CompanionActionEvent, DropdownChoice, CompanionInputFieldDropdown } from "@companion-module/base";
+import type {ModuleInstance} from './main.js'
 
 export async function getActions(instance: ModuleInstance): Promise<CompanionActionDefinitions> {
     const actions: CompanionActionDefinitions = {};

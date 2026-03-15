@@ -1,5 +1,5 @@
 import type {CompanionFeedbackDefinitions, CompanionFeedbackDefinition, CompanionInputFieldDropdown, CompanionFeedbackBooleanEvent, CompanionFeedbackContext, DropdownChoice, CompanionFeedbackButtonStyleResult} from '@companion-module/base'
-import type {ModuleInstance} from './main'
+import type {ModuleInstance} from './main.js'
 
 export async function getFeedbacks(instance: ModuleInstance): Promise<CompanionFeedbackDefinitions> {
     const feedbacks: CompanionFeedbackDefinitions = {}

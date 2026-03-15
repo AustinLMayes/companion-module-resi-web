@@ -1,6 +1,6 @@
 {
-	"extends": "@companion-module/tools/tsconfig/node18/recommended",
-	"include": ["**/*.ts", "*.js", "*.ts"],
+	"extends": "@companion-module/tools/tsconfig/node22/recommended",
+	"include": ["src/**/*.ts"],
 	"exclude": ["node_modules/**", "src/**/*spec.ts", "src/**/__tests__/*", "src/**/__mocks__/*"],
 	"compilerOptions": {
 		"outDir": "./dist",
@@ -8,11 +8,11 @@
 		"paths": {
 			"*": ["./node_modules/*"]
 		},
-		"module": "es2020",
+		"module": "Node16",
 		"verbatimModuleSyntax": true,
-		"moduleResolution": "node",
 		"strict": false,
 		"noUnusedLocals": false,
-		"noUnusedParameters": false
+		"noUnusedParameters": false,
+		"moduleResolution": "Node16"
 	}
 }

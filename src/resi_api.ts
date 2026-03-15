@@ -277,3 +277,5 @@ export class ResiApi {
         }
     }
 }
+
+export default ResiApi;
